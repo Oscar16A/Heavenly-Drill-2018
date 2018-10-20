@@ -18,26 +18,40 @@ public class playerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey("left") && transform.rotation.z <= turnlimit && transform.position.x > lBoundary)
-		{
-            transform.Rotate(0, 0, turnspeed);
-            isTurning = true;
-        }
+        if (!drillMovement.dead)
+        {
+            if (Input.GetKey("left") && transform.rotation.z <= turnlimit && transform.position.x > lBoundary)
+            {
+                transform.Rotate(0, 0, turnspeed);
+                isTurning = true;
+            }
 
-		if (Input.GetKey("right") && transform.rotation.z >= -turnlimit && transform.position.x < rBoundary)
-		{
-            transform.Rotate(0, 0, -turnspeed);
-            isTurning = true;
+            if (Input.GetKey("right") && transform.rotation.z >= -turnlimit && transform.position.x < rBoundary)
+            {
+                transform.Rotate(0, 0, -turnspeed);
+                isTurning = true;
+            }
+            if (transform.position.x <= lBoundary && transform.rotation.z > 0f)
+            {
+                transform.Rotate(0, 0, -turnspeed * 1.25f);
+            }
+            else if (transform.position.x >= rBoundary && transform.rotation.z < 0f)
+            {
+                transform.Rotate(0, 0, turnspeed * 1.25f);
+            }
+            else if (transform.rotation.z < .005f && transform.rotation.z > -.005f && !isTurning)
+            {
+                transform.eulerAngles = new Vector3(0f, 0f, 0f);
+            }
+            else if (transform.rotation.z < 0f && !isTurning)
+            {
+                transform.Rotate(0, 0, turnspeed * turnbackmodifier);
+            }
+            else if (transform.rotation.z > 0f && !isTurning)
+            {
+                transform.Rotate(0, 0, -turnspeed * turnbackmodifier);
+            }
+            isTurning = false;
         }
-        if(transform.rotation.z < .005f && transform.rotation.z > -.005f && !isTurning) {
-            transform.eulerAngles = new Vector3(0f, 0f, 0f);
-        }
-		else if(transform.rotation.z < 0f && !isTurning) {
-			transform.Rotate (0, 0, turnspeed * turnbackmodifier);
-		}
-		else if(transform.rotation.z > 0f && !isTurning) {
-			transform.Rotate (0, 0, -turnspeed * turnbackmodifier);
-		}
-        isTurning = false;
 	}
 }
