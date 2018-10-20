@@ -6,7 +6,7 @@ public class moving_item : MonoBehaviour {
 
     private Random rnd = new Random();
     private Vector3 init_pos;
-    public Vector3 speed = ();
+    public Vector3 speed = new Vector3(0,0,0);
 
 	// Use this for initialization
 	void Start () {
