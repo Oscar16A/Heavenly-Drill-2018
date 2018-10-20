@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class projectile_script : MonoBehaviour {
     public float speed = 20f;
+    public Rigidbody2D rb;
 
 
     private void Start()

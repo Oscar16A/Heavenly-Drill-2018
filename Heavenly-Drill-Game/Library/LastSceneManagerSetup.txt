@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Kevin's Scene.unity
+- path: Assets/Scenes/random spawns.unity
   isLoaded: 1
   isActive: 1

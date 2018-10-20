@@ -45,9 +45,10 @@ public class generator : MonoBehaviour {
             randEnemy = Random.Range(0, enemies.Length);
 
             Vector3 spawnPosition = new Vector3(Random.Range(-spawnValuesPosition.x, spawnValuesPosition.x), 0, 0);
-            Vector3 spawnRotation = new Vector3(0, 0, Random.Range(-spawnValuesRotation, spawnValuesRotation));
+            //Vector3 spawnRotation = new Vector3(0, 0, Random.Range(-spawnValuesRotation, spawnValuesRotation));
 
-            Instantiate(enemies[randEnemy], spawnPosition + transform.TransformPoint(0, 0, 0), Quaternion.LookRotation(spawnRotation));
+            Instantiate(enemies[randEnemy], spawnPosition + transform.TransformPoint(0, 0, 0), 
+                gameObject.transform.rotation/* Quaternion.LookRotation(spawnRotation)*/);
 
             yield return new WaitForSeconds(spawnWait);
 
