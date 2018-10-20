@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\generator.cs" />
     <Compile Include="Assets\moving_background.cs" />
     <Compile Include="Assets\moving_item.cs" />
     <Compile Include="Assets\Scripts\drillMovement.cs" />
