@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class fuel : MonoBehaviour {
@@ -8,11 +9,13 @@ public class fuel : MonoBehaviour {
     public float boostrate = 3f;
     private int f = 100;
     private float timeC;
+    public Slider slider;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         timeC = 0f;
-	}
+        slider.value = 1.0f;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -28,9 +31,10 @@ public class fuel : MonoBehaviour {
         {
             f -= 1;
             timeC = 0f;
-            print(f);
+            slider.value = (float)(f / 100.0);
+
         }
-        if(f <= 0)
+        if (f <= 0)
         {
             GetComponent<drillMovement>().death();
         }
