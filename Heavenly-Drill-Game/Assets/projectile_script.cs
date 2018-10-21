@@ -1,10 +1,10 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class projectile_script : MonoBehaviour {
     public float upspeed = 7f;
-    public float lifetime = 3;
+    public float lifetime = 3.0f;
 
     private void Start()
     {
