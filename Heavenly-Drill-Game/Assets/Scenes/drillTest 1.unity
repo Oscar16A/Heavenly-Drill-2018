@@ -583,9 +583,9 @@ MonoBehaviour:
   lBoundary: -5
   rBoundary: 5
   bBoundary: -5.2
+  tBoundary: -0.5
   speed: 10
-  projectilePrefab: {fileID: 0}
-  firepoint: {fileID: 0}
+  animPlay: 1
 --- !u!114 &1545133590
 MonoBehaviour:
   m_ObjectHideFlags: 0
