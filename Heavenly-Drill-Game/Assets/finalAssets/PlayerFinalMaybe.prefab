@@ -103,8 +103,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72a83b62a5519094c891c7b5835963fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   speed: 30
 --- !u!114 &114343204409376830
+=======
+  fRate: 0.3
+  boostrate: 3
+  slider: {fileID: 0}
+--- !u!114 &114243866376117992
+>>>>>>> 33e09b6c26c19fceba380751baba4b5bbbcecbcb
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -186,7 +193,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a47293ba7345ab540868c2ec1b4e2844, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b5aea795bd29c9043b7c3c07d6684690, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
