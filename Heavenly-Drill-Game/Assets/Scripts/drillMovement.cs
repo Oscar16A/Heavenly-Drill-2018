@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class drillMovement : MonoBehaviour {
 
-    public float speed = .8f;
+    public float speed = 15f;
     public static bool dead;
     private bool componentAdded;
 
@@ -18,22 +18,22 @@ public class drillMovement : MonoBehaviour {
 	void Update () {
         if(!dead)
         {
-            transform.Translate(-transform.rotation.z * speed, 0, 0, Space.World);
+            transform.Translate(-transform.rotation.z * speed * Time.deltaTime, 0, 0, Space.World);
         }
         else if(!componentAdded)
         {
+            gameObject.GetComponent<Animator>().enabled = false;
             gameObject.AddComponent<goDown>();
             componentAdded = true;
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        print("hi");
         death();
     }
 
-    void death()
+    public void death()
     {
         dead = true;
     }
