@@ -7,6 +7,7 @@ public class wormBehaviorOther : MonoBehaviour {
     public Animator animator;
     public bool isAttacking;
     public bool primed;
+    public Vector3 initialPosition;
 
     public float primedXDistance;
     public float attackXDistance;
@@ -24,6 +25,7 @@ public class wormBehaviorOther : MonoBehaviour {
         isAttacking = false;
         StartCoroutine(executeAfterTime());
         StartCoroutine(executeAfterTime2());
+        transform.position = initialPosition;
 
     }
 
