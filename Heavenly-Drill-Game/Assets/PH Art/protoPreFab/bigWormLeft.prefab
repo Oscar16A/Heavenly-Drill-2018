@@ -89,6 +89,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 95246773968064382}
+  initialPosition: {x: -10, y: 14, z: 0}
   isAttacking: 0
   primed: 0
   primedXDistance: -7.5
@@ -96,7 +97,7 @@ MonoBehaviour:
   primedRate: 10
   attackRate: 20
   waitTimePrimed: 0.75
-  waitTimeAttack: 2.75
+  waitTimeAttack: 3.25
 --- !u!114 &114887787879063198
 MonoBehaviour:
   m_ObjectHideFlags: 1

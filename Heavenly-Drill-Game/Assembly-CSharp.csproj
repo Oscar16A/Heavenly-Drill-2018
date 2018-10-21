@@ -53,6 +53,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <Reference Include="Boo.Lang">
+<<<<<<< HEAD
+>>>>>>> e51cbc5ef2385888ca356e5fba96c665bb429ef9
      <Compile Include="Assets\boost.cs" />
      <Compile Include="Assets\ExploScript.cs" />
      <Compile Include="Assets\fastSpawnTest.cs" />
