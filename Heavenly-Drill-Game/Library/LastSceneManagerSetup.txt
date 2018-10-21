@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/drillTest.unity
-=======
-- path: Assets/Scenes/protoFinalScene/protoTypeScene.unity
->>>>>>> 33e09b6c26c19fceba380751baba4b5bbbcecbcb
   isLoaded: 1
   isActive: 1
