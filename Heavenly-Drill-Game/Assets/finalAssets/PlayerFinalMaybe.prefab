@@ -105,6 +105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fRate: 0.3
   boostrate: 3
+  slider: {fileID: 0}
 --- !u!114 &114243866376117992
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -185,7 +186,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a47293ba7345ab540868c2ec1b4e2844, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b5aea795bd29c9043b7c3c07d6684690, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
