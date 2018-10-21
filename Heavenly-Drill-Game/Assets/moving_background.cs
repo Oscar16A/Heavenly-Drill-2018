@@ -18,7 +18,7 @@ public class moving_background : MonoBehaviour {
 	void Update () {
 
         boostRatio = boost.boostRatio;
-        transform.Translate(0, speed*boostRatio, 0);
+        transform.Translate(Vector3.down*speed*boostRatio*Time.deltaTime, Space.World);
         if (transform.position[1] <= resetYPosition)
         {
             transform.position = default_position;

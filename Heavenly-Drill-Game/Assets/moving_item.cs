@@ -19,7 +19,7 @@ public class moving_item : MonoBehaviour {
 	void Update ()
     {
         boostRatio = boost.boostRatio;
-        transform.Translate(Vector3.down * speed * boostRatio, Space.World);
+        transform.Translate(Vector3.down * speed * boostRatio * Time.deltaTime, Space.World);
         if (transform.position[1] <= despawnYPosition)
         {
             Destroy(gameObject);
