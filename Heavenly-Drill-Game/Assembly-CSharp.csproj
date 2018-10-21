@@ -54,8 +54,11 @@
   </ItemGroup>
   <ItemGroup>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> master
      <Compile Include="Assets\boost.cs" />
      <Compile Include="Assets\generator.cs" />
      <Compile Include="Assets\MainMenu.cs" />
@@ -370,6 +373,7 @@
  <Reference Include="Boo.Lang">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
  </Reference>
+<<<<<<< HEAD
 =======
 >>>>>>> master
     <Compile Include="Assets\boost.cs" />
@@ -689,6 +693,8 @@
 <<<<<<< HEAD
 =======
 >>>>>>> 33e09b6c26c19fceba380751baba4b5bbbcecbcb
+>>>>>>> master
+=======
 >>>>>>> master
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
