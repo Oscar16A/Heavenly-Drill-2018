@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class drillMovement : MonoBehaviour {
 
-    public float speed = 15f;
+    public float speed = 30f;
     public static bool dead;
     private bool componentAdded;
 

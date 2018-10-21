@@ -10,6 +10,7 @@ TextureImporter:
     21300010: ShipSpriteSheet_5
     21300012: ShipSpriteSheet_6
     21300014: ShipSpriteSheet_7
+    21300016: ShipSpriteSheet_8
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -99,8 +100,8 @@ TextureImporter:
         y: 0
         width: 100
         height: 200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -119,8 +120,8 @@ TextureImporter:
         y: 0
         width: 100
         height: 200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -139,8 +140,8 @@ TextureImporter:
         y: 0
         width: 100
         height: 200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -159,8 +160,8 @@ TextureImporter:
         y: 0
         width: 100
         height: 200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -179,8 +180,8 @@ TextureImporter:
         y: 0
         width: 100
         height: 200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -199,8 +200,8 @@ TextureImporter:
         y: 0
         width: 100
         height: 200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -219,8 +220,8 @@ TextureImporter:
         y: 0
         width: 100
         height: 200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -239,6 +240,26 @@ TextureImporter:
         y: 0
         width: 100
         height: 200
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da414abf72d4c92419a056da7f77d0d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShipSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 101
+        width: 20
+        height: 99
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,7 +267,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da414abf72d4c92419a056da7f77d0d9
+      spriteID: a377fb96e3c5fca4ba7232c3998523b1
       vertices: []
       indices: 
       edges: []
