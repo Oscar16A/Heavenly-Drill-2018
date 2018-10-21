@@ -23,6 +23,7 @@ public class drillMovement : MonoBehaviour {
         else if(!componentAdded)
         {
             gameObject.GetComponent<Animator>().enabled = false;
+            gameObject.GetComponent<AudioSource>().enabled = false;
             gameObject.AddComponent<goDown>();
             componentAdded = true;
         }
