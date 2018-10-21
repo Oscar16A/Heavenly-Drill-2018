@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class moving_background : MonoBehaviour {
-    public Vector3 default_position = new Vector3(0, 0, -5);
-    public Vector3 reset_location = new Vector3(0, 0, -5);
+    public Vector3 default_position;
+    public int resetYPosition;
 
-    public float speed = -.2f;
-    public float boostRatio = 1f;
+    public float speed;
+    private float boostRatio;
 
 	// Use this for initialization
 	void Start () {
@@ -17,8 +17,9 @@ public class moving_background : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        transform.Translate(0, speed*boostRatio, 0);
-        if (transform.position[1] <= reset_location[1])
+        boostRatio = boost.boostRatio;
+        transform.Translate(Vector3.down*speed*boostRatio*Time.deltaTime, Space.World);
+        if (transform.position[1] <= resetYPosition)
         {
             transform.position = default_position;
         }

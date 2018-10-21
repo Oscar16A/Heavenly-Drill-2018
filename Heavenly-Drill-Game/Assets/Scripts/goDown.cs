@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class goDown : MonoBehaviour {
 
-    private float downspeed = .03f;
+    public float downSpeed;
+    private float boostRatio;
 
 	// Use this for initialization
 	void Start () {
@@ -13,6 +14,9 @@ public class goDown : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Translate(Vector3.down * downspeed, Space.World);
+
+        boostRatio = boost.boostRatio;
+        transform.Translate(Vector3.down * downSpeed * boostRatio, Space.World);
+
     }
 }

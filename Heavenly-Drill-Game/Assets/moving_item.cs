@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class moving_item : MonoBehaviour {
 
-    private Random rnd = new Random();
-    private Vector3 initPosition;
     public float speed;
-    public float boostRatio;
-    public int despawnYPosition;
+    private float boostRatio;
+    public int despawnYPosition = -10;
 
 	// Use this for initialization
 	void Start ()
@@ -20,7 +18,8 @@ public class moving_item : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        transform.Translate(0,speed*boostRatio,0);
+        boostRatio = boost.boostRatio;
+        transform.Translate(Vector3.down * speed * boostRatio * Time.deltaTime, Space.World);
         if (transform.position[1] <= despawnYPosition)
         {
             Destroy(gameObject);

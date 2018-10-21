@@ -16,7 +16,7 @@ public class boost : MonoBehaviour {
 	void Update () {
         if (!drillMovement.dead)
         {
-            if (Input.GetKey("up"))
+            if (Input.GetKey("space"))
             {
                 boostRatio = boostAmount;
 
