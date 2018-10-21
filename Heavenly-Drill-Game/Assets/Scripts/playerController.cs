@@ -39,6 +39,7 @@ public class playerController : MonoBehaviour {
             gameObject.GetComponent<Animator>().SetBool("hasShot", false);
             gameObject.GetComponent<Animator>().SetBool("isCharged", false);
             gameObject.GetComponent<Animator>().enabled = false;
+            gameObject.GetComponent<AudioSource>().enabled = false;
             shotted = false;
         }
         if (!drillMovement.dead)
@@ -78,6 +79,7 @@ public class playerController : MonoBehaviour {
             else
             {
                 gameObject.GetComponent<Animator>().enabled = true;
+                gameObject.GetComponent<AudioSource>().enabled = true;
                 boostcooldown = false;
             }
             if (Input.GetKey("left") && transform.rotation.z <= turnlimit && transform.position.x > lBoundary)
