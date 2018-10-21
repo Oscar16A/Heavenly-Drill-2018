@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class projectile_script : MonoBehaviour {
     public float upspeed = 7f;
-    public float lifetime = 2.0f;
+    public float lifetime = 3.0f;
 
 
     private void Start()

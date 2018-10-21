@@ -138,7 +138,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 78
+  controlID: 98
 --- !u!114 &3
 >>>>>>> 68c60bceb565fe441a1f4c42af5c91b0b75b8ae5
 MonoBehaviour:
@@ -281,7 +281,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 <<<<<<< HEAD
 --- !u!114 &10
@@ -665,15 +665,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/finalAssets
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 46
   m_LastFolders:
+<<<<<<< HEAD
   - Assets/finalAssets
 <<<<<<< HEAD
   m_LastFoldersGridSize: 46
   m_LastProjectPath: C:\Users\TheWillgamer\Desktop\Heavenly-Drill-2018\Heavenly-Drill-Game
 =======
+=======
+  - Assets
+>>>>>>> bce7d20ee2d578af559424e11f46ed2324fe1f99
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Kevit\Desktop\Projects\Heavenly-Drill-2018\Heavenly-Drill-Game
 >>>>>>> 68c60bceb565fe441a1f4c42af5c91b0b75b8ae5
@@ -681,6 +685,7 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_SelectedIDs: 840c0000
     m_LastClickedID: 3204
@@ -690,6 +695,11 @@ MonoBehaviour:
     m_LastClickedID: 3498
     m_ExpandedIDs: 00000000c4090000040a0000660b0000160c0000ec0c0000
 >>>>>>> 68c60bceb565fe441a1f4c42af5c91b0b75b8ae5
+=======
+    m_SelectedIDs: c4090000
+    m_LastClickedID: 2500
+    m_ExpandedIDs: 00000000c4090000080a0000720b0000220c0000000d0000
+>>>>>>> bce7d20ee2d578af559424e11f46ed2324fe1f99
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -718,10 +728,14 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 000000006609000096090000920a0000f80b0000
 =======
     m_ExpandedIDs: 00000000c4090000040a0000660b0000160c0000ec0c0000
 >>>>>>> 68c60bceb565fe441a1f4c42af5c91b0b75b8ae5
+=======
+    m_ExpandedIDs: 00000000c4090000080a0000720b0000220c0000000d0000
+>>>>>>> bce7d20ee2d578af559424e11f46ed2324fe1f99
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -858,10 +872,16 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 3cefffff
     m_LastClickedID: -4292
     m_ExpandedIDs: 10efffff2aefffff36efffff42efffffbcf8ffffe4fbffff00000000483000005e300000
 >>>>>>> 68c60bceb565fe441a1f4c42af5c91b0b75b8ae5
+=======
+    m_SelectedIDs: a4090000
+    m_LastClickedID: 0
+    m_ExpandedIDs: e4fbffff00000000
+>>>>>>> bce7d20ee2d578af559424e11f46ed2324fe1f99
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1039,6 +1059,7 @@ MonoBehaviour:
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_HBaseRangeMin: -151.2
     m_HBaseRangeMax: 151.2
     m_VBaseRangeMin: -144.8
@@ -1049,6 +1070,12 @@ MonoBehaviour:
     m_VBaseRangeMin: -161.6
     m_VBaseRangeMax: 161.6
 >>>>>>> 68c60bceb565fe441a1f4c42af5c91b0b75b8ae5
+=======
+    m_HBaseRangeMin: -459
+    m_HBaseRangeMax: 459
+    m_VBaseRangeMin: -202
+    m_VBaseRangeMax: 202
+>>>>>>> bce7d20ee2d578af559424e11f46ed2324fe1f99
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1099,10 +1126,14 @@ MonoBehaviour:
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 472.5, y: 473.75}
 =======
   m_LastWindowPixelSize: {x: 1147.5, y: 526.25}
 >>>>>>> 68c60bceb565fe441a1f4c42af5c91b0b75b8ae5
+=======
+  m_LastWindowPixelSize: {x: 918, y: 421}
+>>>>>>> bce7d20ee2d578af559424e11f46ed2324fe1f99
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
