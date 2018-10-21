@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scripts\fuel.cs" />
      <Compile Include="Assets\Scripts\goDown.cs" />
      <Compile Include="Assets\Scripts\playerController.cs" />
+     <Compile Include="Assets\Scripts\shootingscr.cs" />
      <Compile Include="Assets\Scripts\worm.cs" />
      <Compile Include="Assets\Scripts\wormTunnel.cs" />
      <None Include="Assets\Scenes\ProjectSettings\ProjectVersion.txt" />

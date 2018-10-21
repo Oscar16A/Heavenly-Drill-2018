@@ -3,19 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class projectile_script : MonoBehaviour {
-    public float speed = 20f;
-    public Rigidbody2D rb;
+    public float upspeed = 7f;
 
 
     private void Start()
     {
-        rb.velocity = transform.up * speed;
     }
 
 
     public void Update()
     {
-        
-
+        transform.Translate(Vector3.up * upspeed * Time.deltaTime);
     }
 }

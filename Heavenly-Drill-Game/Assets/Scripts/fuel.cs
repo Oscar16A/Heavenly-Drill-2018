@@ -5,6 +5,7 @@ using UnityEngine;
 public class fuel : MonoBehaviour {
 
     public float fRate = .3f;
+    public float boostrate = 3f;
     private int f = 100;
     private float timeC;
 
@@ -15,7 +16,14 @@ public class fuel : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        timeC += Time.deltaTime;
+        if (Input.GetKey("space") && !playerController.boostcooldown)
+        {
+            timeC += Time.deltaTime*boostrate;
+        }
+        else
+        {
+            timeC += Time.deltaTime;
+        }
         if(timeC > fRate && f > 0)
         {
             f -= 1;
