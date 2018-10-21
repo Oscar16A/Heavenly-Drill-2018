@@ -113,6 +113,47 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &270943888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 270943889}
+  - component: {fileID: 270943890}
+  m_Layer: 0
+  m_Name: ProSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &270943889
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 270943888}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.3999999, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1545133588}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &270943890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 270943888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba66189bb6056654793c9a6a98ae1b71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projec: {fileID: 1817580787185394, guid: 478e302b9e5fc794ca482b41299bde2a, type: 2}
 --- !u!1 &315493509
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,9 +286,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1545133585}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.21, y: -4.4, z: 0}
+  m_LocalPosition: {x: 0.21, y: -5.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 270943889}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -262,11 +304,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a1aa3434d5f6f34a95b8c5b57cf5e76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnspeed: 0.6
+  turnspeed: 50
+  boostspeed: 1
   turnbackmodifier: 0.8
   turnlimit: 0.15
   lBoundary: -5
   rBoundary: 5
+  bBoundary: -5.2
   speed: 10
   projectilePrefab: {fileID: 0}
   firepoint: {fileID: 0}
@@ -281,7 +325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72a83b62a5519094c891c7b5835963fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 25
+  speed: 30
 --- !u!114 &1545133591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -294,6 +338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fRate: 0.3
+  boostrate: 3
 --- !u!1 &1889236462
 GameObject:
   m_ObjectHideFlags: 0
