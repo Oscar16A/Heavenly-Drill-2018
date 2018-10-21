@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\boost.cs" />
      <Compile Include="Assets\generator.cs" />
      <Compile Include="Assets\moving_background.cs" />
      <Compile Include="Assets\moving_item.cs" />

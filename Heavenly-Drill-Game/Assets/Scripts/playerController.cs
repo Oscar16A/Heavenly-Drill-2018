@@ -12,46 +12,72 @@ public class playerController : MonoBehaviour {
     public float lBoundary = -5f;
     public float rBoundary = 5f;
     public float bBoundary = -5.2f;
+    public float tBoundary = -.5f;
     public float speed = 10f;
-
-    public GameObject projectilePrefab;
-    public Transform firepoint;
 
     private float spaceTime;
     public static bool boostcooldown;
-
-
+    private float armed;
+    private bool shotted;
+    private float bcd;
+    public float animPlay = 1f;
 
     // Use this for initialization
     void Start () {
         isTurning = false;
         spaceTime = 0f;
         boostcooldown = false;
+        armed = 0f;
+        shotted = false;
+        bcd = 0f;
     }
 	
 	// Update is called once per frame
 	void Update () {
+        if(shotted)
+        {
+            gameObject.GetComponent<Animator>().SetBool("hasShot", false);
+            gameObject.GetComponent<Animator>().SetBool("isCharged", false);
+            gameObject.GetComponent<Animator>().enabled = false;
+            shotted = false;
+        }
         if (!drillMovement.dead)
         {
-            if (Input.GetKeyDown("space"))
-            {
-                gameObject.GetComponent<Animator>().speed = 2f;
-            }
             if (Input.GetKeyUp("space"))
             {
-                gameObject.GetComponent<Animator>().speed = 1f;
+                gameObject.GetComponent<Animator>().SetBool("isBoosting", false);
                 boostcooldown = true;
+                if (armed > 2f)
+                {
+                    gameObject.GetComponent<Animator>().SetBool("hasShot", true);
+                    shotted = true;
+                }
+                armed = 0f;
             }
             if (Input.GetKey("space") && !boostcooldown)
             {
-                transform.Translate(0, boostspeed *2f * Time.deltaTime, 0, Space.World);
+                if(transform.position.y <= tBoundary)
+                {
+                    transform.Translate(0, boostspeed * 2f * Time.deltaTime, 0, Space.World);
+                }
+                armed += Time.deltaTime;
+                gameObject.GetComponent<Animator>().SetBool("isBoosting", true);
+                if (armed > 2f)
+                {
+                    gameObject.GetComponent<Animator>().SetBool("isCharged", true);
+                }
             }
             else if (transform.position.y >= bBoundary)
             {
                 transform.Translate(0, -boostspeed * Time.deltaTime, 0, Space.World);
+                if (transform.position.y <= bBoundary + animPlay)
+                {
+                    gameObject.GetComponent<Animator>().enabled = true;
+                }
             }
             else
             {
+                gameObject.GetComponent<Animator>().enabled = true;
                 boostcooldown = false;
             }
             if (Input.GetKey("left") && transform.rotation.z <= turnlimit && transform.position.x > lBoundary)
