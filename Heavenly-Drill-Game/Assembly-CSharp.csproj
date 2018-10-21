@@ -54,6 +54,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\boost.cs" />
+     <Compile Include="Assets\ExploScript.cs" />
+     <Compile Include="Assets\fastSpawnTest.cs" />
      <Compile Include="Assets\generator.cs" />
      <Compile Include="Assets\MainMenu.cs" />
      <Compile Include="Assets\moving_background.cs" />
