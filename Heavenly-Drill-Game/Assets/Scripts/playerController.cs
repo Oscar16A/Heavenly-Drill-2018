@@ -6,6 +6,7 @@ public class playerController : MonoBehaviour {
 
     public float turnspeed = 50f;
     public float boostspeed = .7f;
+    public float resetspeed = 3f;
     public float turnbackmodifier = .8f;
     public float turnlimit = .15f;
     bool isTurning;
@@ -21,9 +22,11 @@ public class playerController : MonoBehaviour {
     private bool shotted;
     private float bcd;
     public float animPlay = 1f;
+    public static bool iBoost;
 
     // Use this for initialization
     void Start () {
+        iBoost = false;
         isTurning = false;
         spaceTime = 0f;
         boostcooldown = false;
@@ -47,11 +50,12 @@ public class playerController : MonoBehaviour {
             if (Input.GetKeyUp("space"))
             {
                 gameObject.GetComponent<Animator>().SetBool("isBoosting", false);
-                boostcooldown = true;
+                iBoost = false;
                 if (armed > 2f)
                 {
                     gameObject.GetComponent<Animator>().SetBool("hasShot", true);
                     shotted = true;
+                    boostcooldown = true;
                 }
                 armed = 0f;
             }
@@ -63,6 +67,7 @@ public class playerController : MonoBehaviour {
                 }
                 armed += Time.deltaTime;
                 gameObject.GetComponent<Animator>().SetBool("isBoosting", true);
+                iBoost = true;
                 if (armed > 2f)
                 {
                     gameObject.GetComponent<Animator>().SetBool("isCharged", true);
@@ -70,7 +75,7 @@ public class playerController : MonoBehaviour {
             }
             else if (transform.position.y >= bBoundary)
             {
-                transform.Translate(0, -boostspeed * Time.deltaTime, 0, Space.World);
+                transform.Translate(0, -resetspeed * Time.deltaTime, 0, Space.World);
                 if (transform.position.y <= bBoundary + animPlay)
                 {
                     gameObject.GetComponent<Animator>().enabled = true;

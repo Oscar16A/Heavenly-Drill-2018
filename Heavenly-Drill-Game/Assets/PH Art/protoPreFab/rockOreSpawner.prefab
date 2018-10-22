@@ -52,9 +52,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 1391994734495490, guid: 48dea5ea30b2bb345ade826cf8a52141, type: 2}
-  - {fileID: 1601362171190134, guid: 2655df94ec84ec54a872fd4b83f6fca5, type: 2}
-  - {fileID: 1601362171190134, guid: 2655df94ec84ec54a872fd4b83f6fca5, type: 2}
+  - {fileID: 1706570383852736, guid: 13fc0ba4ea3f6c743b94e72ec5b849ec, type: 2}
+  - {fileID: 1262810985490304, guid: 9837aa6cfc478a243a0184f50ac8d1dc, type: 2}
+  - {fileID: 1262810985490304, guid: 9837aa6cfc478a243a0184f50ac8d1dc, type: 2}
   spawnValuesPosition: {x: 4, y: 0, z: 0}
   spawnValuesRotation: 30
   spawnWait: 0

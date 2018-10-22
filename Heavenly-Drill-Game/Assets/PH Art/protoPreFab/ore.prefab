@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 58630411625606082}
   m_Layer: 0
   m_Name: ore
-  m_TagString: Untagged
+  m_TagString: fuelpickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

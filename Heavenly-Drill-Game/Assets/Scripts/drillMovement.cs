@@ -7,6 +7,8 @@ public class drillMovement : MonoBehaviour {
     public float speed = 30f;
     public static bool dead;
     private bool componentAdded;
+    public GameObject pickup;
+    public GameObject explosion;
 
 	// Use this for initialization
 	void Start () {
@@ -27,11 +29,43 @@ public class drillMovement : MonoBehaviour {
             gameObject.AddComponent<goDown>();
             componentAdded = true;
         }
+        if(dead)
+        {
+            Instantiate(explosion, new Vector3(transform.position.x, transform.position.y + .5f, transform.position.z), transform.rotation);
+            Destroy(gameObject);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        death();
+        if(collision.gameObject.CompareTag("fuelpickup"))
+        {
+            if(fuel.f < 92)
+            {
+                fuel.f += 8;
+            }
+            else
+            {
+                fuel.f = 100;
+            }
+            Instantiate(pickup, collision.transform.position, collision.transform.rotation);
+            Destroy(collision.gameObject);
+        }
+        else if (playerController.iBoost && collision.gameObject.CompareTag("rock"))
+        {
+            Instantiate(explosion, collision.transform.position, collision.transform.rotation);
+            Destroy(collision.gameObject);
+        }
+        else
+        {
+            if (!dead)
+            {
+                Instantiate(explosion, new Vector3(transform.position.x, transform.position.y + .5f, transform.position.z), transform.rotation);
+                //gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                death();
+                Destroy(gameObject);
+            }
+        }
     }
 
     public void death()

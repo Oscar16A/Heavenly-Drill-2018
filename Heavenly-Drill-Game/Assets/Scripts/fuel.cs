@@ -7,7 +7,7 @@ public class fuel : MonoBehaviour {
 
     public float fRate = .3f;
     public float boostrate = 3f;
-    private int f = 100;
+    public static int f = 100;
     private float timeC;
     public Slider slider;
 
@@ -15,6 +15,7 @@ public class fuel : MonoBehaviour {
     void Start () {
         timeC = 0f;
         slider.value = 1.0f;
+        f = 100;
     }
 	
 	// Update is called once per frame
